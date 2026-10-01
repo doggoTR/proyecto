@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Registro · Mesa de Ayuda Campus Ulima</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans:wght@400;500;600&display=swap" />
+        <link rel="stylesheet" href="registro.css" />
+    </head>
+    <body>
+        <header class="hdr">
+            <div class="wrap">
+                <a class="brand" href="landing.html"><span class="logo"></span>Mesa de Ayuda <span>· Campus Ulima</span></a>
+                <nav class="nav">
+                    <a href="landing.html">Inicio</a>
+                    <a href="#">Cómo reportar</a>
+                    <a href="#">Categorías de servicio</a>
+                    <a href="#">Tiempos de atención</a>
+                </nav>
+                <div class="acts">
+                    <a class="btn sec" href="login.html">Iniciar sesión</a>
+                    <a class="btn" href="registro.html">Registrarme</a>
+                </div>
+            </div>
+        </header>
+        <main class="pub">
+            <div class="wrap">
+                <div class="center" style="padding-top:0;gap:24px">
+                    <section class="card" style="width:830px;padding:32px">
+                        <h2>Crear mi cuenta</h2>
+                        <p class="aux" style="margin-bottom:16px">Solo para miembros de la comunidad con correo institucional.</p>
+                        <form>
+                            <div class="g2">
+                                <div class="f">
+                                    <label for="nom">Nombres</label>
+                                    <input id="nom" value="Camila Alejandra">
+                                </div>
+                                <div class="f">
+                                    <label for="ape">Apellidos</label>
+                                    <input id="ape" value="Quispe Ramos">
+                                </div>
+                                <div class="f">
+                                    <label for="mail">Correo institucional</label>
+                                    <input id="mail" type="email" value="camila.quispe@aloe.ulima.edu.pe">
+                                </div>
+                                <div class="f">
+                                    <label for="tel">Teléfono</label>
+                                    <input id="tel" type="tel" value="987 654 321">
+                                    <span class="h">Para coordinar el acceso al ambiente.</span>
+                                </div>
+                                <div class="f">
+                                    <label for="p1">Contraseña</label>
+                                    <input id="p1" type="password" value="••••••••••">
+                                    <span class="h">Mínimo 8 caracteres, con una mayúscula y un número.</span>
+                                </div>
+                                <div class="f">
+                                    <label for="p2">Confirmar contraseña</label>
+                                    <input id="p2" type="password" value="••••••••">
+                                </div>
+                                <div class="f">
+                                    <label for="uni">Unidad o carrera</label>
+                                    <select id="uni">
+                                        <option>Ingeniería de Sistemas</option>
+                                    </select>
+                                </div>
+                                <div class="f">
+                                    <label for="vin">Vínculo con la universidad</label>
+                                    <select id="vin">
+                                        <option>Alumna</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <label class="chk"><input type="checkbox"> Acepto los términos del servicio y la política de privacidad.</label>
+                            <div class="acts">
+                                <button class="btn" type="button">Crear cuenta</button>
+                                <a class="btn sec" href="landing.html">Cancelar</a>
+                            </div>
+                        </form>
+                    </section>
+                    <aside class="card" style="width:300px;padding:16px">
+                        <h3>Antes de registrarte</h3>
+                        <p class="aux" style="margin:8px 0 12px">Si eres técnico o supervisor no uses este formulario: el área de Infraestructura te envía una invitación con tus datos precargados.</p>
+                        <hr class="sep" style="margin:12px 0">
+                        <p class="aux">Tu cuenta queda activa al instante; el correo de bienvenida llega en pocos minutos.</p>
+                    </aside>
+                </div>
+            </div>
+        </main>
+        <footer class="pf">
+            <div class="wrap">
+                <div>
+                    <strong>Mesa de Ayuda de Servicios</strong>
+                    <p>Universidad de Lima · Dirección de Infraestructura y Servicios</p>
+                    <p>soporte.campus@ulima.edu.pe · anexo 30500</p>
+                    <p>Atención de lunes a sábado, 07:00 a 21:00</p>
+                </div>
+                <div>
+                    <h4>Reportar</h4>
+                    <a href="#">Registrar un ticket</a>
+                    <a href="#">Seguir un ticket</a>
+                    <a href="#">Categorías de servicio</a>
+                </div>
+                <div>
+                    <h4>Ayuda</h4>
+                    <a href="#">Preguntas frecuentes</a>
+                    <a href="#">Tiempos de atención esperados</a>
+                    <a href="#">Emergencias eléctricas · anexo 30111</a>
+                </div>
+                <div class="cp">
+                    © 2026 Universidad de Lima
+                    <br>
+                    <a href="#" style="display:inline;color:#8FA6BB">Términos</a>
+                    ·
+                    <a href="#" style="display:inline;color:#8FA6BB">Privacidad</a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

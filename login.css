@@ -1,0 +1,385 @@
+/* Mesa de Ayuda · Campus Ulima — Historia 1 · estilos de login.html */
+
+:root {
+    --primary: #1F4E79;
+    --primary-dark: #163A5A;
+    --primary-soft: #E7EFF6;
+    --accent: #D2601A;
+    --bg: #F4F6F8;
+    --surface: #fff;
+    --border: #D6DEE5;
+    --text: #141C24;
+    --muted: #5F6C78;
+    --success: #1E7F4D;
+    --warning: #B7791F;
+    --danger: #B4322B;
+    --info: #3B6FA8;
+    --r: 4px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font: 400 15px/22px 'IBM Plex Sans', system-ui, sans-serif;
+    color: var(--text);
+    background: var(--bg);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.mono {
+    font-family: 'IBM Plex Mono', ui-monospace, monospace;
+}
+
+.wrap {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 28px;
+    line-height: 32px;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+}
+
+.aux {
+    font-size: 13px;
+    line-height: 18px;
+    color: var(--muted);
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    padding: 0 16px;
+    border: 1px solid var(--primary);
+    border-radius: var(--r);
+    background: var(--primary);
+    color: #fff;
+    font: 500 13px/18px 'IBM Plex Sans', sans-serif;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: var(--primary-dark);
+    text-decoration: none;
+}
+
+.btn.sec {
+    background: var(--surface);
+    color: var(--primary);
+}
+
+.btn.sec:hover {
+    background: var(--primary-soft);
+}
+
+.btn.ter {
+    background: none;
+    border-color: transparent;
+    color: var(--primary);
+}
+
+.btn.dan {
+    background: var(--danger);
+    border-color: var(--danger);
+}
+
+.btn.wide {
+    width: 100%;
+    height: 40px;
+}
+
+.btn:disabled {
+    opacity: .5;
+    cursor: not-allowed;
+}
+
+.hdr {
+    height: 60px;
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+}
+
+.hdr .wrap {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    height: 60px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 600;
+    color: var(--text);
+}
+
+.brand span {
+    font-weight: 400;
+    color: var(--muted);
+}
+
+.logo {
+    width: 20px;
+    height: 20px;
+    background: var(--primary);
+    border-radius: var(--r);
+}
+
+.nav {
+    display: flex;
+    gap: 24px;
+    font-size: 13px;
+}
+
+.nav a {
+    color: var(--text);
+}
+
+.hdr .acts {
+    margin-left: auto;
+    display: flex;
+    gap: 8px;
+}
+
+.pf {
+    background: var(--primary-dark);
+    color: #fff;
+    padding: 32px 0 24px;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.pf .wrap {
+    display: grid;
+    grid-template-columns: 360px 200px 280px 1fr;
+    gap: 24px;
+}
+
+.pf p {
+    color: #C9D6E2;
+    margin-top: 8px;
+}
+
+.pf h4 {
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: .08em;
+    color: #8FA6BB;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.pf a {
+    display: block;
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+.pf .cp {
+    text-align: right;
+    color: #8FA6BB;
+    align-self: end;
+    font-size: 12px;
+}
+
+main.pub {
+    flex: 1;
+    padding: 32px 0 48px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+    padding-top: 64px;
+    align-items: flex-start;
+}
+
+.card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--r);
+    padding: 24px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.f {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    position: relative;
+}
+
+label, .lbl {
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    color: var(--muted);
+}
+
+input, select, textarea {
+    height: 40px;
+    padding: 0 12px;
+    border: 1px solid var(--border);
+    border-radius: var(--r);
+    background: var(--surface);
+    font: 400 15px/22px 'IBM Plex Sans', sans-serif;
+    color: var(--text);
+    width: 100%;
+}
+
+input:focus, select:focus {
+    outline: 2px solid var(--primary-soft);
+    border-color: var(--primary);
+}
+
+input[readonly] {
+    background: var(--bg);
+    color: var(--muted);
+}
+
+input:disabled {
+    background: var(--bg);
+}
+
+input.vok {
+    border-color: var(--success);
+}
+
+input.verr {
+    border-color: var(--danger);
+}
+
+.h {
+    font-size: 13px;
+    line-height: 18px;
+    color: var(--muted);
+}
+
+.h.vok {
+    color: var(--success);
+}
+
+.h.verr {
+    color: var(--danger);
+}
+
+.f .tg {
+    position: absolute;
+    right: 12px;
+    top: 30px;
+    font-size: 13px;
+    color: var(--primary);
+}
+
+.g2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 13px;
+}
+
+.chk {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    text-transform: none;
+    letter-spacing: 0;
+    color: var(--text);
+}
+
+.chk input {
+    width: 16px;
+    height: 16px;
+}
+
+.acts {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.alert {
+    padding: 12px 16px;
+    border: 1px solid;
+    border-left-width: 4px;
+    border-radius: var(--r);
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.alert.i {
+    background: var(--primary-soft);
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.alert.e {
+    background: #FBEAE8;
+    border-color: var(--danger);
+    color: var(--danger);
+}
+
+.alert.w {
+    background: #FAF1E0;
+    border-color: var(--warning);
+    color: var(--warning);
+}
+
+.alert.s {
+    background: #E6F3EC;
+    border-color: var(--success);
+    color: var(--success);
+}
+
+.stack {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Iniciar sesión · Mesa de Ayuda Campus Ulima</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans:wght@400;500;600&display=swap" />
+        <link rel="stylesheet" href="login.css" />
+    </head>
+    <body>
+        <header class="hdr">
+            <div class="wrap">
+                <a class="brand" href="landing.html"><span class="logo"></span>Mesa de Ayuda <span>· Campus Ulima</span></a>
+                <nav class="nav">
+                    <a href="landing.html">Inicio</a>
+                    <a href="#">Cómo reportar</a>
+                    <a href="#">Categorías de servicio</a>
+                    <a href="#">Tiempos de atención</a>
+                </nav>
+                <div class="acts">
+                    <a class="btn sec" href="login.html">Iniciar sesión</a>
+                    <a class="btn" href="registro.html">Registrarme</a>
+                </div>
+            </div>
+        </header>
+        <main class="pub">
+            <div class="wrap">
+                <div class="center">
+                    <section class="card" style="width:600px;padding:32px">
+                        <h2>Iniciar sesión</h2>
+                        <p class="aux" style="margin-bottom:16px">Ingresa con tu correo institucional.</p>
+                        <form>
+                            <div class="f">
+                                <label for="correo">Correo institucional</label>
+                                <input id="correo" type="email" value="camila.quispe@aloe.ulima.edu.pe" autocomplete="username">
+                            </div>
+                            <div class="f">
+                                <label for="clave">Contraseña</label>
+                                <input id="clave" type="password" value="••••••••••" autocomplete="current-password">
+                                <a class="tg" href="#">Mostrar</a>
+                            </div>
+                            <div class="row">
+                                <label class="chk"><input type="checkbox" checked> Recordarme en este equipo</label>
+                                <a href="recuperar.html">¿Olvidaste tu contraseña?</a>
+                            </div>
+                            <button class="btn wide" type="button">Ingresar</button>
+                            <p class="aux" style="text-align:center">¿No tienes cuenta? <a href="registro.html">Regístrate</a></p>
+                        </form>
+                    </section>
+                    <aside style="width:420px;padding-top:56px" class="stack">
+                        <h3>Acceso por rol</h3>
+                        <p class="aux">Usuarios de la comunidad ingresan con su correo. Técnicos y supervisores reciben una invitación del área de Infraestructura y definen su contraseña al aceptarla.</p>
+                        <div class="alert i">Tras cinco intentos fallidos la cuenta se bloquea por 15 minutos.</div>
+                    </aside>
+                </div>
+            </div>
+        </main>
+        <footer class="pf">
+            <div class="wrap">
+                <div>
+                    <strong>Mesa de Ayuda de Servicios</strong>
+                    <p>Universidad de Lima · Dirección de Infraestructura y Servicios</p>
+                    <p>soporte.campus@ulima.edu.pe · anexo 30500</p>
+                    <p>Atención de lunes a sábado, 07:00 a 21:00</p>
+                </div>
+                <div>
+                    <h4>Reportar</h4>
+                    <a href="#">Registrar un ticket</a>
+                    <a href="#">Seguir un ticket</a>
+                    <a href="#">Categorías de servicio</a>
+                </div>
+                <div>
+                    <h4>Ayuda</h4>
+                    <a href="#">Preguntas frecuentes</a>
+                    <a href="#">Tiempos de atención esperados</a>
+                    <a href="#">Emergencias eléctricas · anexo 30111</a>
+                </div>
+                <div class="cp">
+                    © 2026 Universidad de Lima
+                    <br>
+                    <a href="#" style="display:inline;color:#8FA6BB">Términos</a>
+                    ·
+                    <a href="#" style="display:inline;color:#8FA6BB">Privacidad</a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
